@@ -88,7 +88,7 @@ header .block-header__description {
 .menu__link {
   display: inline;
   list-style: none;
-  padding: 16px;
+  padding: 15px;
   cursor: pointer;
 }
 
@@ -154,7 +154,7 @@ header .block-header__description {
   width: 275px;
   height: 110px;
   position: relative;
-  background-color: #1BA8E0;
+  background-color: #258EDE;
   margin: 2%;
   z-index: 1;
 }
@@ -171,13 +171,13 @@ header .block-header__description {
 .block-page .block-formation .timeline .block-timeline-left::before, .block-page .block-formation .timeline .block-timeline-right::before {
   margin-left: -30px;
   border-width: 55px 30px 55px 0;
-  border-color: transparent #1BA8E0 transparent transparent;
+  border-color: transparent #258EDE transparent transparent;
 }
 
 .block-page .block-formation .timeline .block-timeline-left::after, .block-page .block-formation .timeline .block-timeline-right::after {
   margin-left: 100%;
   border-width: 55px 0 55px 30px;
-  border-color: transparent transparent transparent #1BA8E0;
+  border-color: transparent transparent transparent #258EDE;
 }
 
 .block-page .block-formation .timeline .block-timeline-left__annee, .block-page .block-formation .timeline .block-timeline-left__school, .block-page .block-formation .timeline .block-timeline-left__content, .block-page .block-formation .timeline .block-timeline-left__logo, .block-page .block-formation .timeline .block-timeline-right__annee, .block-page .block-formation .timeline .block-timeline-right__school, .block-page .block-formation .timeline .block-timeline-right__content, .block-page .block-formation .timeline .block-timeline-right__logo {
@@ -187,9 +187,10 @@ header .block-header__description {
 }
 
 .block-page .block-formation .timeline .block-timeline-left__annee, .block-page .block-formation .timeline .block-timeline-right__annee {
+  width: 180px;
   font-size: 2.2rem;
-  margin-left: 27%;
-  margin-top: 3%;
+  margin-left: 2%;
+  margin-top: 2%;
 }
 
 .block-page .block-formation .timeline .block-timeline-left__logo, .block-page .block-formation .timeline .block-timeline-right__logo {
@@ -237,7 +238,7 @@ header .block-header__description {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: #1BA8E0;
+  background-color: #258EDE;
   margin-top: 15%;
   z-index: 3;
 }
@@ -282,6 +283,21 @@ header .block-header__description {
 
 .block-page .block-formation .timeline .block-timeline-right__mid-branch {
   margin-left: -34%;
+}
+
+.block-page .block-experience__title {
+  color: green;
+  margin-bottom: 3%;
+}
+
+.block-page .block-experience .timeline-experience {
+  background-color: lightgrey;
+}
+
+.block-page .block-experience .timeline-experience .panel-experience-left {
+  width: 350px;
+  height: 200px;
+  background-color: red;
 }
 
 .block-page .block-competence__titre, .block-page .block-competence__titre-langue, .block-page .block-competence__titre-technique {
@@ -385,6 +401,7 @@ header .block-header__description {
 
 .block-page .block-contact__input [value="Envoyer"]:hover {
   background-color: #28A8EA;
+  cursor: pointer;
 }
 
 .block-page .block-me-retrouver {

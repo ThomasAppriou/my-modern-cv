@@ -4,7 +4,7 @@ $color-menu: #258EDE;
 $color-element-menu: #FFFFFF;
 $color-nom-prenom: #FFFFFF;
 
-$color-block-timeline: #1BA8E0;
+$color-block-timeline: #258EDE;
 
 $color-box-langue: #258EDE;
 $color-box-hover: #28A8EA;
@@ -100,7 +100,7 @@ header {
     &__link {
         display: inline;
         list-style: none;
-        padding: 16px;
+        padding: 15px;
         cursor: pointer;
         &:hover {
             background-color: $color-header;
@@ -184,9 +184,11 @@ header {
                     text-align: center;
                 }
                 &__annee {
+                    width: 180px;
                     font-size: 2.2rem;
-                    margin-left: 27%;
-                    margin-top: 3%;
+                    margin-left: 2%;
+                    margin-top: 2%;
+                    // background-color: green;
                 }
                 &__logo {
                     width: 80px;
@@ -274,6 +276,20 @@ header {
             }
         }
     }
+    .block-experience {
+        &__title {
+            color: green;
+            margin-bottom: 3%;
+        }
+        .timeline-experience {
+            background-color: lightgrey;
+            .panel-experience-left {
+                width: 350px;
+                height: 200px;
+                background-color: red;
+            }
+        }
+    }
     .block-competence {
         &__titre, &__titre-langue, &__titre-technique {
             text-align: center;
@@ -351,6 +367,7 @@ header {
                 background-color: $color-nom-prenom;
                 &:hover {
                     background-color: $color-box-hover;
+                    cursor: pointer;
                 }
             }
         }
