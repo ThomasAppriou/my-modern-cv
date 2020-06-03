@@ -13,8 +13,32 @@ $color-text-menu-hover: #28A8EA;
 $color-footer: #000000;
 $color-footer-text: #F1F1F1;
 
+@font-face {
+    font-family: 'KoHo';
+    src: url('../font/KoHo-Regular.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'KoHo';
+    font-weight: bold;
+    src: url('../font/KoHo-Bold.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'KoHo';
+    font-weight: 600;
+    src: url('../font/KoHo-SemiBold.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'KoHo';
+    font-style: italic;
+    src: url('../font/KoHo-Italic.ttf') format('truetype'),
+}
+
+
 * {
-    font-family: "Arial";
+    font-family: "KoHo", "Arial";
     padding: 0;
     margin: 0;
     // text-align: center;
@@ -162,7 +186,7 @@ header {
                 &__annee {
                     font-size: 2.2rem;
                     margin-left: 27%;
-                    margin-top: 4%;
+                    margin-top: 3%;
                 }
                 &__logo {
                     width: 80px;
@@ -176,14 +200,14 @@ header {
                     width: 180px;
                     font-size: 1.2rem;
                     font-weight: bold;
-                    margin-top: 14%;
+                    margin-top: 13%;
                     margin-left: 2%;
                     // background-color: red;
                 }
                 &__content {
                     width: 180px;
                     font-size: 1.2rem;
-                    margin-top: 26%;
+                    margin-top: 24%;
                     margin-left: 2%;
                     // background-color: red;
                 }
@@ -270,7 +294,7 @@ header {
                 box-shadow: 2px 2px 2px #0051A3;
                 color: $color-nom-prenom;
                 &:hover {
-                    background-color: $color-box-hover;
+                    filter: brightness(125%);
                 }
                 img {
                     width: 52px;
@@ -281,12 +305,12 @@ header {
                 }
                 strong {
                     font-size: 20px;
-                    font-weight: normal;
+                    font-weight: 600;
                     line-height: 25px;
                 }
                 span {
                     font-size: 15px;
-                    font-weight: normal;
+                    // font-weight: 600;
                     margin-top: 15px;
                     line-height: 25px;
                 }

@@ -1,5 +1,28 @@
+@font-face {
+  font-family: 'KoHo';
+  src: url("../font/KoHo-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'KoHo';
+  font-weight: bold;
+  src: url("../font/KoHo-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'KoHo';
+  font-weight: 600;
+  src: url("../font/KoHo-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'KoHo';
+  font-style: italic;
+  src: url("../font/KoHo-Italic.ttf") format("truetype");
+}
+
 * {
-  font-family: "Arial";
+  font-family: "KoHo", "Arial";
   padding: 0;
   margin: 0;
 }
@@ -166,7 +189,7 @@ header .block-header__description {
 .block-page .block-formation .timeline .block-timeline-left__annee, .block-page .block-formation .timeline .block-timeline-right__annee {
   font-size: 2.2rem;
   margin-left: 27%;
-  margin-top: 4%;
+  margin-top: 3%;
 }
 
 .block-page .block-formation .timeline .block-timeline-left__logo, .block-page .block-formation .timeline .block-timeline-right__logo {
@@ -182,14 +205,14 @@ header .block-header__description {
   width: 180px;
   font-size: 1.2rem;
   font-weight: bold;
-  margin-top: 14%;
+  margin-top: 13%;
   margin-left: 2%;
 }
 
 .block-page .block-formation .timeline .block-timeline-left__content, .block-page .block-formation .timeline .block-timeline-right__content {
   width: 180px;
   font-size: 1.2rem;
-  margin-top: 26%;
+  margin-top: 24%;
   margin-left: 2%;
 }
 
@@ -289,7 +312,8 @@ header .block-header__description {
 }
 
 .block-page .block-competence__block-langue div:hover, .block-page .block-competence__block-technique div:hover {
-  background-color: #28A8EA;
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
 }
 
 .block-page .block-competence__block-langue div img, .block-page .block-competence__block-technique div img {
@@ -302,13 +326,12 @@ header .block-header__description {
 
 .block-page .block-competence__block-langue div strong, .block-page .block-competence__block-technique div strong {
   font-size: 20px;
-  font-weight: normal;
+  font-weight: 600;
   line-height: 25px;
 }
 
 .block-page .block-competence__block-langue div span, .block-page .block-competence__block-technique div span {
   font-size: 15px;
-  font-weight: normal;
   margin-top: 15px;
   line-height: 25px;
 }
