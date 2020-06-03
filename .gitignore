@@ -1,4 +1,4 @@
-#ignore all logs
+# ignore all logs
 *.log
 vendor
 .DS_Strore
