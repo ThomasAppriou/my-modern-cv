@@ -219,6 +219,12 @@ header .block-header__description {
   z-index: 3;
 }
 
+.block-page .block-formation .timeline .block-timeline-left:hover, .block-page .block-formation .timeline .block-timeline-right:hover {
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
+  cursor: pointer;
+}
+
 .block-page .block-formation .timeline .block-timeline-left__branch-top {
   margin-left: 115%;
   -webkit-transform: rotate(65deg);

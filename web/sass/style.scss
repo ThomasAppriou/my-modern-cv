@@ -187,8 +187,6 @@ header {
                     margin-left: 2%;
                     // background-color: red;
                 }
-            }
-            .block-timeline-left, .block-timeline-right {
                 &__branch {
                     &-top {
                         position: absolute;
@@ -213,6 +211,10 @@ header {
                     background-color: $color-block-timeline;
                     margin-top: 15%;
                     z-index: 3;
+                }
+                &:hover {
+                    filter: brightness(115%);
+                    cursor: pointer;
                 }
             }
             .block-timeline-left {
