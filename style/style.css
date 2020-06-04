@@ -1,24 +1,24 @@
 @font-face {
   font-family: 'KoHo';
-  src: url("../font/KoHo-Regular.ttf") format("truetype");
+  src: url("../docs/font/KoHo-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'KoHo';
   font-weight: bold;
-  src: url("../font/KoHo-Bold.ttf") format("truetype");
+  src: url("../docs/font/KoHo-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'KoHo';
   font-weight: 600;
-  src: url("../font/KoHo-SemiBold.ttf") format("truetype");
+  src: url("../docs/font/KoHo-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'KoHo';
   font-style: italic;
-  src: url("../font/KoHo-Italic.ttf") format("truetype");
+  src: url("../docs/font/KoHo-Italic.ttf") format("truetype");
 }
 
 * {
