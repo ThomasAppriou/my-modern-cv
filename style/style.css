@@ -95,6 +95,8 @@ header .block-header__description {
 .menu__link:hover {
   background-color: #000000;
   color: #28A8EA;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .block-page {
@@ -161,6 +163,8 @@ header .block-header__description {
   background-color: #258EDE;
   margin: 2%;
   z-index: 1;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 .block-page .block-formation .timeline .block-timeline-left::before, .block-page .block-formation .timeline .block-timeline-left::after, .block-page .block-formation .timeline .block-timeline-right::before, .block-page .block-formation .timeline .block-timeline-right::after {
@@ -176,27 +180,6 @@ header .block-header__description {
   margin-left: -30px;
   border-width: 55px 30px 55px 0;
   border-color: transparent #258EDE transparent transparent;
-}
-
-.block-page .block-formation .timeline .block-timeline-left::before::before, .block-page .block-formation .timeline .block-timeline-right::before::before {
-  content: '';
-  background: #258EDE;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  width: 120%;
-  height: 0%;
-  -webkit-transform: translate(-50%, -50%) rotate(25deg);
-          transform: translate(-50%, -50%) rotate(25deg);
-  z-index: -1;
-}
-
-.block-page .block-formation .timeline .block-timeline-left::before:hover::before, .block-page .block-formation .timeline .block-timeline-right::before:hover::before {
-  height: 250%;
 }
 
 .block-page .block-formation .timeline .block-timeline-left::after, .block-page .block-formation .timeline .block-timeline-right::after {
@@ -229,9 +212,9 @@ header .block-header__description {
 
 .block-page .block-formation .timeline .block-timeline-left__school, .block-page .block-formation .timeline .block-timeline-right__school {
   width: 180px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-top: 13%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 12%;
   margin-left: 2%;
 }
 
@@ -269,8 +252,10 @@ header .block-header__description {
 }
 
 .block-page .block-formation .timeline .block-timeline-left:hover, .block-page .block-formation .timeline .block-timeline-right:hover {
-  -webkit-filter: brightness(115%);
-          filter: brightness(115%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-filter: invert(100%) brightness(200%) grayscale(100%);
+          filter: invert(100%) brightness(200%) grayscale(100%);
   cursor: pointer;
 }
 
