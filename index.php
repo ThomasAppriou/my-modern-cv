@@ -1,3 +1,6 @@
+<?php
+echo 'okok';
+?>
 <!DOCTYPE html>
 <html>
     <head>
