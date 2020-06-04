@@ -1,6 +1,3 @@
-<?php
-echo 'okok';
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -37,6 +34,9 @@ echo 'okok';
                 <a href="#me-retrouver"><li class="menu__link">Me retrouver</li></a>
             </ul>
         </nav>
+        <?php
+echo 'okok';
+?>
 
         <!-- block page entiere -->
         <section class="block-page">
