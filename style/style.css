@@ -46,7 +46,7 @@ p {
 
 header {
   width: auto;
-  height: 260px;
+  height: 270px;
   background-color: #000000;
   text-align: center;
   padding: 25px;
@@ -57,7 +57,10 @@ header .block-header__image-profil {
   width: 150px;
   height: 150px;
   margin: auto;
-  padding: 15px;
+  margin-top: 15px;
+  border-radius: 50%;
+  border: 6px solid whitesmoke;
+  border-image-source: 4px white;
 }
 
 header .block-header__nom-prenom {
@@ -494,8 +497,8 @@ header .block-header__description {
   cursor: pointer;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  -webkit-filter: invert(100%) brightness(300%);
-          filter: invert(100%) brightness(300%);
+  -webkit-filter: invert(100%) brightness(200%);
+          filter: invert(100%) brightness(200%);
 }
 
 .block-page .block-experience .timeline-experience .panel-experience:hover a {

@@ -63,7 +63,7 @@ p {
 
 header {
     width: auto;
-    height: 260px;
+    height: 270px;
     background-color: $color-header;
     text-align: center;
     padding: 25px;
@@ -73,7 +73,10 @@ header {
             width: 150px;
             height: 150px;
             margin: auto;
-            padding: 15px;
+            margin-top: 15px;
+            border-radius: 50%;
+            border: 6px solid whitesmoke;
+            border-image-source: 4px white;
         }
         &__nom-prenom {
             font-size: 3rem;
@@ -452,7 +455,7 @@ header {
                     color: $color-header;
                     cursor: pointer;
                     transition: all 0.5s ease;
-                    filter: invert(100%) brightness(300%);
+                    filter: invert(100%) brightness(200%);
                     a {
                         color: $color-header;
                     }
