@@ -363,62 +363,63 @@ header {
             margin-right: 9%;
             .panel-experience-left {
                 width: 350px;
-                height: 200px;
                 margin-top: -8%;
                 display: block;
                 &::before {
-                    content: "";;
-                    height: 25px;
-                    width: 25px;
+                    content: "";
+                    height: 35%;
+                    width: 8px;
                     position: absolute;
-                    background-color: green;
-                    margin-left: 390px;
-                    margin-top: 12.5px;
-                    z-index: 5;
-                    border-radius: 50%;
+                    background-color: lightgrey;
+                    margin-left: 30%;
+                    margin-top: 3%;
                 }
                 &__title {
                     background-color: green;
                     width: 100%;
-                    height: 32%;
+                    padding-top:  4%; padding-bottom:  5.5%;
+                    padding-left: 2%; padding-right: 2%;
                     border-radius: 0px 45px 45px 0px;
                     text-align: center;
                     display: block;
                     color: $color-element-menu;
+                    z-index: 3;
                     h2 {
-                        font-size: 1.5rem;
+                        font-size: 1.7rem;
                         font-weight: 600;
-                        padding: 30px;
-                        padding-top: 4%;
+                        max-width: 95%;
                     }
                     &::before {
-                        content: "";
-                        width: 0;
-                        height: 0;
-                        border-style: solid;
-                        border-width: 0 13px 13px 0;
-                        border-color: transparent darkgreen transparent transparent;
+                        content: "";;
+                        height: 25px;
+                        width: 25px;
                         position: absolute;
-                        margin-left: -174px;
-                        margin-top: 64px;
-                        
+                        background-color: green;
+                        margin-left: 15.9%;
+                        margin-top: 1%;
+                        z-index: 5;
+                        border-radius: 50%;
                     }
                 }
                 &__content {
                     width: 88%;
-                    height: 70%;
                     margin-left: 4%;
                     background-color: white;
                     text-align: justify;
                     border-radius: 0px 0px 2px 2px;
                     display: block;
+                    padding-bottom: 5%;
+                    z-index: 2;
                     h3 {
-                        font-size: 1.7rem;
+                        font-size: 1.6rem;
                         padding-left: 5%;
                         padding-top: 4%;
+                        padding-left: 5%;
+                        padding-right: 5%;
                     }
                     p {
                         height: 100%;
+                        min-height: 100px;
                         font-size: 1.35rem;
                         padding-top: 2%;
                         padding-left: 5%;
@@ -426,12 +427,13 @@ header {
                     }
                     &::before {
                         content: "";
-                        height: 140px;
-                        width: 8px;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 0 14px 14px 0;
+                        border-color: transparent darkgreen transparent transparent;
                         position: absolute;
-                        background-color: lightgrey;
-                        margin-left: 385px;
-                        margin-top: -25px;
+                        margin-left: -14px;
                     }
                 }
             }
