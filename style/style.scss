@@ -352,30 +352,34 @@ header {
 
     .block-experience {
         background-color: $color-header;
-        padding-bottom: 12%;
+        padding-bottom: 120px;
+        padding-left: 65px;
         &__title {
-            color: green;
+            color: orangered;
             padding-bottom: 3%;
             margin-bottom: -10%;
         }
         .timeline-experience {
             margin-left: 2%;
             margin-right: 2%;
-            display: flex;
-            flex-wrap: wrap;
+            display: inline-block;
+            width: 95%;
             .panel-experience {
                 width: 225px;
                 height: auto;
-                min-height: 250px;
                 border-left: 3px solid orangered;
-                background-color: transparent;
                 position: relative;
                 color: whitesmoke;
-                margin-top: 12%;
+                margin-top: 115px;
+                z-index: 100;
+                display: inline-block;
+                a {
+                    color: whitesmoke;
+                }
                 &::before {
                     content: '';
                     height: 35px;
-                    width: 125%;
+                    width: 115%;
                     background-color: orangered;
                     position: absolute;
                     top: 100%;
@@ -384,25 +388,26 @@ header {
                 }
                 &__title {
                     width: auto;
-                    padding: 2.5%;
+                    padding-bottom: 2.5%;
                     padding-left: 7%;
                     padding-right: 7%;
-                    font-size: 1.35rem;
+                    font-size: 1.7rem;
                     font-weight: bold;
                     text-align: left;
                     color: orangered;
-                    // background-color: red;
-                    min-height: 51.5px;
+                    min-height: 5%;
+                    word-wrap: break-word;
                 }
                 &__subtitle {
                     width: auto;
                     padding: 2.5%;
                     padding-left: 7%;
                     padding-right: 7%;
-                    font-size: 1.3rem;
+                    font-size: 1.5rem;
                     font-weight: 600;
                     text-align: left;
-                    // background-color: blue;
+                    min-height: 5%;
+                    word-wrap: break-word;
                 }
                 &__description {
                     width: auto;
@@ -410,22 +415,24 @@ header {
                     padding: 2.5%;
                     padding-left: 7%;
                     padding-right: 7%;
-                    font-size: 1.3rem;
-                    font-weight: 600;
+                    margin-bottom: 7%;
+                    font-size: 1.4rem;
                     text-align: left;
-                    // background-color: green;
+                    min-height: 40%;
+                    word-wrap: break-word;
                 }
                 &__year {
                     width: auto;
                     position: absolute;
-                    margin-top: 62px;
+                    margin-top: 33px;
                     padding: 2.5%;
                     padding-left: 7%;
                     padding-right: 7%;
-                    font-size: 2.85rem;
+                    font-size: 2.65rem;
                     font-weight: 600;
                     text-align: left;
                     color: orangered;
+                    display: block;
                     &::after {
                         content: '';
                         width: 20px;
@@ -434,136 +441,24 @@ header {
                         background-color: whitesmoke;
                         position: absolute;
                         margin-left: -6px;
-                        left: -5%;
-                        top: -52%;
+                        left: -4.5%;
+                        top: -55%;
+                        display: block;
                     }
-                    // background-color: violet;
+                }
+                &:hover {
+                    transition: all 0.3s;
+                    // background-color: whitesmoke;
+                    color: $color-header;
+                    cursor: pointer;
+                    transition: all 0.5s ease;
+                    filter: invert(100%) brightness(300%);
+                    a {
+                        color: $color-header;
+                    }
                 }
             }
         }
-        // .timeline-experience {
-        //     background-color: black;
-        //     margin-left: 9%;
-        //     margin-right: 9%;
-        //     .panel-experience-left, .panel-experience-right {
-        //         width: 350px;
-        //         margin-top: -8%;
-        //         display: block;
-        //         &::before {
-        //             content: "";
-        //             height: 185px;
-        //             width: 8px;
-        //             position: absolute;
-        //             background-color: lightgrey;
-        //             margin-top: 3%;
-        //             z-index: 0;
-        //         }
-        //         &__title {
-        //             background-color: green;
-        //             padding-top:  4%; padding-bottom:  5.5%;
-        //             padding-left: 2%; padding-right: 2%;
-        //             text-align: center;
-        //             display: block;
-        //             color: $color-element-menu;
-        //             z-index: 3;
-        //             h2 {
-        //                 font-size: 1.7rem;
-        //                 font-weight: 600;
-        //                 max-width: 90%;
-        //             }
-        //             &::before {
-        //                 content: "";;
-        //                 height: 25px;
-        //                 width: 25px;
-        //                 position: absolute;
-        //                 margin-top: 1%;
-        //                 z-index: 5;
-        //                 border-radius: 50%;
-        //             }
-        //         }
-        //         &__content {
-        //             width: 88%;
-        //             background-color: white;
-        //             text-align: justify;
-        //             display: block;
-        //             padding-bottom: 5%;
-        //             z-index: 2;
-        //             border-radius: 0px 0px 2px 2px;
-        //             h3 {
-        //                 font-size: 1.6rem;
-        //                 padding-left: 5%;
-        //                 padding-top: 4%;
-        //                 padding-left: 5%;
-        //                 padding-right: 5%;
-        //             }
-        //             p {
-        //                 height: 100%;
-        //                 min-height: 100px;
-        //                 font-size: 1.35rem;
-        //                 padding-top: 2%;
-        //                 padding-left: 5%;
-        //                 padding-right: 5%;
-        //             }
-        //             &::before {
-        //                 content: "";
-        //                 width: 0;
-        //                 height: 0;
-        //                 border-style: solid;
-        //                 position: absolute;
-        //             }
-        //         }
-        //     }
-        //     .panel-experience-left {
-        //         &::before {
-        //             margin-left: 404px;
-        //         }
-        //         &__title {
-        //             background-color: green;
-        //             // border-radius: 0px 45px 45px 0px;
-        //             h2 {
-        //                 margin-left: 2%;
-        //             }
-        //             &::before {
-        //                 background-color: green;
-        //                 margin-left: 213.5px;
-        //             }
-        //         }
-        //         &__content {
-        //             margin-left: 4%;
-        //             &::before {
-        //                 border-width: 0 14px 14px 0;
-        //                 border-color: transparent darkgreen transparent transparent;
-        //                 position: absolute;
-        //                 margin-left: -14px;
-        //             }
-        //         }
-        //     }
-        //     .panel-experience-right {
-        //         margin-left: 55.9%;
-        //         &::before {
-        //             margin-left: -49px;
-        //         }
-        //         &__title {
-        //             background-color: red;
-        //             border-radius: 10px 0px 0px 10px;
-        //             h2 {
-        //                 margin-left: 8%;
-        //             }
-        //             &::before {
-        //                 background-color: red;
-        //                 margin-left: -239px;
-        //             }
-        //         }
-        //         &__content {
-        //             margin-left: 8%;
-        //             &::before {
-        //                 border-width: 14px 14px 0 0;
-        //                 border-color: darkred transparent transparent transparent;
-        //                 margin-left: 308px;
-        //             }
-        //         }
-        //     }
-        // }
     }
 
     .block-contact {

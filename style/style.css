@@ -379,11 +379,12 @@ header .block-header__description {
 
 .block-page .block-experience {
   background-color: #000000;
-  padding-bottom: 12%;
+  padding-bottom: 120px;
+  padding-left: 65px;
 }
 
 .block-page .block-experience__title {
-  color: green;
+  color: orangered;
   padding-bottom: 3%;
   margin-bottom: -10%;
 }
@@ -391,28 +392,29 @@ header .block-header__description {
 .block-page .block-experience .timeline-experience {
   margin-left: 2%;
   margin-right: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: inline-block;
+  width: 95%;
 }
 
 .block-page .block-experience .timeline-experience .panel-experience {
   width: 225px;
   height: auto;
-  min-height: 250px;
   border-left: 3px solid orangered;
-  background-color: transparent;
   position: relative;
   color: whitesmoke;
-  margin-top: 12%;
+  margin-top: 115px;
+  z-index: 100;
+  display: inline-block;
+}
+
+.block-page .block-experience .timeline-experience .panel-experience a {
+  color: whitesmoke;
 }
 
 .block-page .block-experience .timeline-experience .panel-experience::before {
   content: '';
   height: 35px;
-  width: 125%;
+  width: 115%;
   background-color: orangered;
   position: absolute;
   top: 100%;
@@ -422,14 +424,15 @@ header .block-header__description {
 
 .block-page .block-experience .timeline-experience .panel-experience__title {
   width: auto;
-  padding: 2.5%;
+  padding-bottom: 2.5%;
   padding-left: 7%;
   padding-right: 7%;
-  font-size: 1.35rem;
+  font-size: 1.7rem;
   font-weight: bold;
   text-align: left;
   color: orangered;
-  min-height: 51.5px;
+  min-height: 5%;
+  word-wrap: break-word;
 }
 
 .block-page .block-experience .timeline-experience .panel-experience__subtitle {
@@ -437,9 +440,11 @@ header .block-header__description {
   padding: 2.5%;
   padding-left: 7%;
   padding-right: 7%;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 600;
   text-align: left;
+  min-height: 5%;
+  word-wrap: break-word;
 }
 
 .block-page .block-experience .timeline-experience .panel-experience__description {
@@ -448,22 +453,25 @@ header .block-header__description {
   padding: 2.5%;
   padding-left: 7%;
   padding-right: 7%;
-  font-size: 1.3rem;
-  font-weight: 600;
+  margin-bottom: 7%;
+  font-size: 1.4rem;
   text-align: left;
+  min-height: 40%;
+  word-wrap: break-word;
 }
 
 .block-page .block-experience .timeline-experience .panel-experience__year {
   width: auto;
   position: absolute;
-  margin-top: 62px;
+  margin-top: 33px;
   padding: 2.5%;
   padding-left: 7%;
   padding-right: 7%;
-  font-size: 2.85rem;
+  font-size: 2.65rem;
   font-weight: 600;
   text-align: left;
   color: orangered;
+  display: block;
 }
 
 .block-page .block-experience .timeline-experience .panel-experience__year::after {
@@ -474,8 +482,24 @@ header .block-header__description {
   background-color: whitesmoke;
   position: absolute;
   margin-left: -6px;
-  left: -5%;
-  top: -52%;
+  left: -4.5%;
+  top: -55%;
+  display: block;
+}
+
+.block-page .block-experience .timeline-experience .panel-experience:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #000000;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-filter: invert(100%) brightness(300%);
+          filter: invert(100%) brightness(300%);
+}
+
+.block-page .block-experience .timeline-experience .panel-experience:hover a {
+  color: #000000;
 }
 
 .block-page .block-contact {
