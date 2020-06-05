@@ -150,7 +150,7 @@ header {
     .block-formation {
         background-color: $color-header;
         &__title {
-            color: red;
+            color: $color-block-timeline;
             margin-bottom: 5%;
         }
         .timeline {
